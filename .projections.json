@@ -1,0 +1,6 @@
+{
+  "*" : {
+    "dispatch" : "swipl -f {} -t run_tests 2>&1 \| ag 'ERROR|tests?|Assertion'",
+    "make" : "swipl -f {} -t run_tests"
+  }
+}
