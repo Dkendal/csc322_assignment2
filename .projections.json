@@ -1,13 +1,13 @@
 {
   "*.plt" : {
     "dispatch" : "swipl -f {}.plt -t run_tests 2>&1 \| ag 'ERROR|tests?|Assertion'",
-    "make" : "swipl -f {} -t run_tests",
+    "make" : "swipl -f {}.plt -t run_tests",
     "alternate" : "{}.pl",
     "template" : ":- consult({}).\n:- begin_tests({}).\n:- end_tests({}).\n% vim: set ft=prolog:"
   },
   "*.pl" : {
     "dispatch" : "swipl -f {}.plt -t run_tests 2>&1 \| ag 'ERROR|tests?|Assertion'",
-    "make" : "swipl -f {} -t run_tests",
+    "make" : "swipl -f {}.plt -t run_tests",
     "alternate" : "{}.plt"
   }
 }

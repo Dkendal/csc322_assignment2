@@ -1,0 +1,1 @@
+Can't define a rule for this because it defines the absence of a relation, i.e. no student likes Pam, but nothing would prevent a rule from being defined afterword that a particular student did like Pam.
